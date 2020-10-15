@@ -1,0 +1,51 @@
+.menu-btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  width: 34px;
+  height: 18px;
+
+  &__lines,
+  &__lines::before,
+  &__lines::after{
+    height: 2px;
+    width: 34px;
+    background-color: var(--white-color);
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__lines::before,
+  &__lines::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+
+  }
+
+  &__lines::before{
+    transform: translateY(-8px);
+  }
+
+  &__lines::after{
+    transform: translateY(8px);
+  }
+}
+
+// Animation
+.menu-btn.open{
+  .menu-btn__lines{
+    transform: translateX(50px);
+    background-color: transparent;
+
+    &::before{
+      transform: rotate(45deg) translate(-34px,34px);
+    }
+
+    &::after{
+      transform:rotate(-45deg) translate(-34px,-34px);
+    }
+  }
+}

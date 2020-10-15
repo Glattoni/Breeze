@@ -5,13 +5,15 @@
 @import "fonts";
 @import "vendor";
 
-// CUSTOM COMPONENTS IMPORTS:
+ // CUSTOM COMPONENTS IMPORTS:
 @import "./components/header";
+@import "./components/menu-btn";
 @import "./components/hero";
 @import "./components/features";
 @import "./components/video";
 @import "./components/rates";
 @import "./components/reviews";
 @import "./components/app";
+@import "./components/contact-form";
 
 @import "media.scss";
