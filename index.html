@@ -13,25 +13,22 @@
   <div class="site-container">
     <header class="header">
   <div class="container header__container">
-    <img class="logo header__logo" src="./img/header_logo.png" alt="logo">
-    <button class="burger header__burger" aria-label="open menu">
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
+    <div class="logo header__logo">BREEZE</div>
+    <button class="menu-btn" aria-label="open menu">
+      <div class="menu-btn__lines"></div>
     </button>
     <nav class="nav header__nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Rates</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
-      </ul>
+        <li class="nav__item"><a href="#home" class="nav__link nav__link--active">Home</a></li>
+        <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+        <li class="nav__item"><a href="#rates" class="nav__link">Rates</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
       </ul>
     </nav>
   </div>
 </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="home">
   <div class="hero__container">
     <div class="swiper-container" data-mobile="false">
       <div class="swiper-wrapper">
@@ -90,7 +87,7 @@
     </div>
   </div>
 </section>
-      <section class="features">
+      <section class="features" id="features">
   <div class="container features__container">
     <div class="feature__container-descr">
       <h2 class="features__title">Features</h2>
@@ -141,7 +138,7 @@
     <video class="video__promo" src="#" poster="../img/video-poster.jpg"></video>
   </div>
 </section>
-      <section class="rates">
+      <section class="rates" id="rates">
   <div class="container rates__container">
     <h2 class="rates__title">Rates</h2>
     <div class="country country__container">
@@ -226,7 +223,7 @@
     </ul>
   </div>
 </section>
-      <section class="contact">
+      <section class="contact" id="contacts">
   <div class="container contact__container">
     <h2 class="contact__title">Get in touch</h2>
     <p class="contact__descr">
@@ -234,18 +231,20 @@
       we will get back to you in 24 hours.
     </p>
     <form action="post" class="contact__form">
-      <input type="text" class="name-input" name="your name:" placeholder="Your Name">
-      <input type="email" class="email-input" name="your email:" placeholder="Email Address">
-      <input type="text" class="name-input" name="subject:" placeholder="Subject">
-      <textarea name="your message" placeholder="Message"></textarea>
+      <input type="text" class="contact__form__item" name="your name:" placeholder="Your Name">
+      <input type="email" class="contact__form__item" name="your email:" placeholder="Email Address">
+      <input type="text" class="contact__form__item" name="subject:" placeholder="Subject">
+      <textarea class="contact__form__item contact__form__message" name="your message" placeholder="Message" rows="9"></textarea>
     </form>
-    <button type="submit" name="sent message"></button>
+    <button class="contact__form-btn" type="submit" name="sent message">SEND MESSAGE</button>
     <div class="socials">
       <h3 class="socials__title">Follow us</h3>
-      <ul class="socials__list"><a href="#" class="social__link social__link--fb"></a></ul>
-      <ul class="socials__list"><a href="#" class="social__link social__link--ig"></a></ul>
-      <ul class="socials__list"><a href="#" class="social__link social__link--tw"></a></ul>
-      <ul class="socials__list"><a href="#" class="social__link social__link--li"></a></ul>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link social__link--fb"></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--ig"></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--tw"></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--li"></a></li>
+      </ul>
     </div>
   </div>
 </section>
