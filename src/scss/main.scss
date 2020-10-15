@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+@import "settings";
+@import "overall";
+@import "fonts";
+@import "vendor";
+
+// CUSTOM COMPONENTS IMPORTS:
+@import "./components/header";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/video";
+@import "./components/rates";
+@import "./components/reviews";
+@import "./components/app";
+
+@import "media.scss";

@@ -1,0 +1,270 @@
+@media(min-width: 768px) {
+  .header {
+
+    &__nav {
+      display: block;
+    }
+
+    .burger {
+      display: none;
+    }
+  }
+
+  .hero {
+
+    &__title {
+      font-size: 44px;
+      max-width: 400px;
+      margin-bottom: 16px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      max-width: 350px;
+    }
+
+  }
+
+  .rates {
+    &__title {
+      font-size: 40px;
+
+    }
+
+    .country {
+      &__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 750px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+
+      &__box {
+        margin: 0;
+      }
+    }
+  }
+
+  .app{
+    &__title{
+      font-size: 40px;
+
+      &-descr{
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+
+    .store{
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hero {
+
+    &__title {
+      font-size: 48px;
+      max-width: 800px;
+      margin-bottom: 16px;
+      line-height: 60px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 32px;
+      margin-bottom: 30px;
+      max-width: 680px;
+    }
+
+    &__descr {
+      display: block;
+      margin-bottom: 44px;
+    }
+
+    &__btn {
+      &-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      &--download-app {
+        order: 2;
+      }
+
+      &--learn-more {
+        order: 1;
+        margin-right: 20px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .features {
+    padding-top: 80px;
+    text-align: left;
+    padding-bottom: 80px;
+
+
+    &__title {
+      font-size: 40px;
+      margin-bottom: 20px;
+
+      &-descr {
+        font-size: 22px;
+        line-height: 32px;
+        max-width: 500px;
+        margin-bottom: 81px;
+      }
+    }
+  }
+
+  .feature {
+    padding-top: 0;
+    padding-left: 41px;
+    max-width: 560px;
+    margin-bottom: 50px;
+
+    &__container {
+      &-preview {
+        display: block;
+      }
+
+      &-descr {
+        margin-top: 30px;
+        margin-right: 35px;
+        margin-left: 0;
+      }
+    }
+
+    &::before {
+      transform: scale(100%);
+      left: 0px;
+      top: 3px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .video {
+    padding: 80px 0px;
+
+    &::after {
+      padding: 28px 30px 29px 32px;
+    }
+  }
+
+  .rates {
+    padding-top: 70px;
+    padding-bottom: 80px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+
+  .reviews{
+    padding-top: 71px;
+    padding-bottom: 40px;
+
+    &__title{
+      font-size: 40px;
+      margin-bottom: 52px;
+    }
+
+    &__list{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__btn{
+      display: none;
+    }
+    &-pagination{
+      display: block;
+    }
+  }
+
+  .swiper{
+    &-container{
+      width: 100%;
+    }
+  }
+
+  .app{
+    padding-top: 110px;
+
+    &__title{
+      margin-bottom: 20px;
+
+      &-descr{
+        margin-bottom: 65px;
+      }
+    }
+
+    .store{
+      gap: 30px;
+    }
+  }
+}
+
+
+@media(min-width: 1154px) {
+  .rates {
+    .country {
+      &__container {
+        max-width: 1140px;
+        margin: 0 auto;
+        margin-bottom: 62px;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 768px) {
+  .hero {
+    &__title {
+      margin-top: 272px;
+    }
+  }
+}
+
+@media(max-width: 899px) {
+  .swiper {
+
+    &-button {
+      &-next {
+        display: none;
+      }
+
+      &-prev {
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 1023px) {
+  .swiper {
+    &-wrapper{
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.rates {
+  background-color: var(--aqua-haze);
+  padding: 50px 0px 60px 0px;
+  text-align: center;
+  font-family: "OpenSans-Semibold";
+  color: var(--abbey-color);
+  font-size: 24px;
+
+  &__title {
+    margin-bottom: 22px;
+    font-size: 30px;
+  }
+
+  &__container {
+    padding: 0 7px;
+  }
+
+  &__btn {
+    background-color: var(--caribbean-green);
+    padding: 15px 0;
+    border: none;
+  }
+
+  .country {
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    &__box {
+      width: 95vw;
+      max-width: 360px;
+      padding-top: 80px;
+      padding-bottom: 98px;
+      background-color: var(--white-color);
+      text-align: center;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+      margin: 0 auto;
+
+      &__rate {
+        font-family: "OpenSans";
+        color: var(--gray-chateau);
+      }
+
+      &__title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 11px;
+      }
+
+      &__image {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

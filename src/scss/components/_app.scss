@@ -1,0 +1,43 @@
+.app {
+  color: var(--white-color);
+  background-color: var(--caribbean-green);
+  text-align: center;
+  padding-top: 53px;
+  padding-bottom: 81px;
+
+  &__title {
+    font-family: "OpenSans-Semibold";
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 13px;
+
+    &-descr {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0 auto 43px;
+      max-width: 440px;
+    }
+  }
+
+  .store {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+
+    &__link {
+      display: inline-block;
+      width: 195px;
+      height: 67px;
+      border-radius: 3px;
+
+      &--google {
+        background-image: url("../img/Google_Play.jpg");
+      }
+
+      &--appstore {
+        background-image: url("../im/Appstore.jpg");
+      }
+    }
+  }
+}
