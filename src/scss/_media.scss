@@ -92,19 +92,13 @@
         margin-bottom: 39px;
       }
     }
-
-    .socials{
-      .social{
-        gap:12px;
-      }
-    }
   }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1025px) {
   .header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .hero {
@@ -233,6 +227,7 @@
     &__btn{
       display: none;
     }
+
     &-pagination{
       display: block;
     }
@@ -259,6 +254,14 @@
       gap: 30px;
     }
   }
+
+  .contact{
+    .socials{
+      .social{
+        gap: 16px;
+      }
+    }
+  }
 }
 
 
@@ -275,11 +278,44 @@
 }
 
 
-@media(max-width: 767px) {
+
+@media(max-width: 375px){
+  .hero{
+    background-image: url(../img/hero-bg.mobile.jpg);
+  }
+}
+
+
+
+@media(max-width: 767px) and (orientation: portrait) {
+
+  .header{
+
+    .nav__link:before{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      width: 90%;
+      background-color: var(--white-color);
+      height: 1px;
+      opacity: 0.5;
+    }
+
+    .active{
+      .nav__link:before{
+        display: block;
+      }
+    }
+  }
+
 
   .hero {
+
     &__title {
-      margin-top: 272px;
+      margin-top: 40vh;
     }
   }
 
@@ -310,17 +346,6 @@
         text-align: center;
         font-size: 36px;
 
-        &::before{
-          content: "";
-          display: block;
-          position: absolute;
-          top: 50%;
-          width: 345px;
-          color: var(--white-color);
-          height: 1px;
-          opacity: 0.5;
-        }
-
         &:not(:last-child){
           margin: 0;
         }
@@ -332,26 +357,22 @@
     }
   }
 
-@media(max-width: 899px) {
-  .swiper {
-
-    &-button {
-      &-next {
-        display: none;
-      }
-
+@media(max-width: 1024px) {
+  .swiper-button {
+      &-next,
       &-prev {
         display: none;
       }
     }
-  }
-}
 
-@media(max-width: 1023px) {
   .swiper {
-    &-wrapper{
-      flex-direction: column;
-      gap: 40px;
+      &-wrapper{
+        flex-direction: column;
+        gap: 40px;
+      }
     }
+
+  .reviews-pagination{
+      display: none;
   }
 }

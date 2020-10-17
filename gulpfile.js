@@ -46,8 +46,8 @@ const styles = () => {
 		}).on('error', notify.onError()))
 		.pipe(postcss([
 			autoprefixer({
-				overrideBrowserslist: ['last 3 versions'],
-				cascade: false
+				overrideBrowserslist: ['last 2 versions'],
+				cascade: false,
 			})
 		]))
 		.pipe(sourcemap.write('.'))
@@ -162,7 +162,7 @@ const scriptsBuild = () => {
 }
 
 const images = () => {
-	return src(['./src/img/**/*.png', './src/img/**/*.jpg'])
+	return src(['./src/img/**/*.png', './src/img/**/*.jpg', './src/img/**/*.svg'])
 		.pipe(imagemin())
 		.pipe(dest('./dist/img/'))
 }

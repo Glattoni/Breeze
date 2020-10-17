@@ -1,10 +1,11 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  padding-top: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   &__logo{
     color: var(--white-color);
@@ -18,6 +19,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+  }
+
+  &.scrolled{
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.250s ease-in-out;
   }
 }
 
@@ -43,8 +49,9 @@
     color: var(--white-color);
     opacity: 0.5;
 
-    &--active {
+    &.active {
       opacity: 1;
+      color: var(--white-color);
     }
 
     &:hover {

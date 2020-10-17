@@ -3,7 +3,7 @@ const ReviewsSlider = document.querySelector('.reviews__swiper-container');
 let mySwiper1;
 
 function ReviewsDesktopSlider() {
-  if (window.innerWidth >= 900 && ReviewsSlider.dataset.mobile == 'false') {
+  if (window.innerWidth >= 1025 && ReviewsSlider.dataset.mobile == 'false') {
     mySwiper1 = new Swiper(ReviewsSlider, {
       direction: 'horizontal',
       loop: true,
@@ -23,7 +23,7 @@ function ReviewsDesktopSlider() {
     ReviewsSlider.dataset.mobile = 'true';
   }
 
-  if (window.innerWidth < 900) {
+  if (window.innerWidth < 1025) {
     ReviewsSlider.dataset.mobile == 'false'
 
     if (ReviewsSlider.classList.contains('swiper-container-initialized')) {

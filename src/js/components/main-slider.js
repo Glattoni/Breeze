@@ -3,7 +3,7 @@ const slider = document.querySelector('.swiper-container');
 let mySwiper;
 
 function desktopSlider() {
-  if (window.innerWidth >= 900 && slider.dataset.mobile == 'false') {
+  if (window.innerWidth >= 1025 && slider.dataset.mobile == 'false') {
     mySwiper = new Swiper(slider, {
       direction: 'horizontal',
       loop: true,
@@ -28,7 +28,7 @@ function desktopSlider() {
     slider.dataset.mobile = 'true';
   }
 
-  if (window.innerWidth < 900) {
+  if (window.innerWidth < 1025) {
     slider.dataset.mobile == 'false'
 
     if (slider.classList.contains('swiper-container-initialized')) {

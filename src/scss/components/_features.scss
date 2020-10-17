@@ -28,6 +28,7 @@
   position: relative;
   max-width: 510px;
   padding-top: 40px;
+  margin: 0 auto;
 
 
   &:hover {
@@ -51,7 +52,7 @@
   }
 
   &::before {
-    content: url(../../img/bullet.svg);
+    content: url(../img/bullet.svg);
     position: absolute;
     top: -2px;
     right: 47%;

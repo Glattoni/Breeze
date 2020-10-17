@@ -51,4 +51,9 @@ button {
 	background-color: transparent;
 	border-style: none;
 	outline: none;
+
+	&:active,
+	&:focus{
+		outline: none;
+	}
 }

@@ -37,7 +37,7 @@
     font-weight: 400;
     line-height: 26px;
     max-width: 346px;
-    margin-bottom: 43px;
+    margin-bottom: 40px;
   }
 
   &__descr {
@@ -103,7 +103,7 @@
       right: 45px;
 
       &::after {
-        content: url(../../img/next_hover.svg);
+        content: url(../img/next_hover.svg);
       }
     }
 
@@ -111,7 +111,7 @@
       left: 45px;
 
       &::after {
-        content: url(../../img/previous_static.svg);
+        content: url(../img/previous_static.svg);
       }
     }
   }
